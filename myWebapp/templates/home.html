@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1> this my page</h1>
+        <form action="imageupload/imageprocess" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input id="image" type="file" name="image"/>
+        <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
